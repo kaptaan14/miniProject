@@ -102,7 +102,9 @@ section:nth-child(even){
 .header .logo i{
     color: var(--green);
 }
-
+.navbar{
+    display: flex;
+}
 .header .navbar a{
     font-size: 1.7rem;
     color: var(--light-color);
@@ -111,6 +113,19 @@ section:nth-child(even){
 
 .header .navbar a:hover{
     color: var(--green);
+}
+
+.logoutbtn {
+    font-size: 1.7rem;
+    font-family: 'Poppins';
+    background: none;
+    padding: 2px;
+}
+.logoinbtn {
+    font-size: 1.7rem;
+    font-family: 'Poppins';
+    background: none;
+    padding: 2px;
 }
 
 #menu-btn{
@@ -553,6 +568,8 @@ section:nth-child(even){
     }
 
     .header .navbar{
+        display: flex;
+        flex-direction: column;
         position: absolute;
         top:115%; right: 2rem;
         border-radius: .5rem;

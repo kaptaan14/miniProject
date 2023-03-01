@@ -22,14 +22,25 @@
     <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> MedHelp. </a>
 
     <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#services">services</a>
-        <a href="#about">about</a>
-        <a href="#doctors">doctors</a>
-        <a href="#book">book</a>
-        <a href="#review">review</a>
-        <a href="#blogs">blogs</a>
-        <a href="login.html">login</a>
+        <div><a href="#home">home</a></div>
+        <div><a href="#services">services</a></div>
+        <div><a href="#about">about</a></div>
+        <div><a href="#doctors">doctors</a></div>
+        <div><a href="#book">book</a></div>
+        <div><a href="#review">review</a></div>
+        <div><a href="#blogs">blogs</a></div>
+        <!-- <div id="userIn"><a href="login.html" id="UserIn">login</a></div> -->
+        <div class="userIn">
+            <a href="login.html" class="logoutbtn" id="userIn">Login/SignUp</a>
+            <!-- <span id="user" class="message"><email-id ></Email-id></span> -->
+        </div>
+        <div class="userIout">
+            <a href="#" id="userOut"><button class="logoutbtn" onclick="logout()" >Logout</button></a>
+        </div>
+        
+        <!-- <div class="loginout d-flex">
+            <a href="login.html">login</a>
+        </div> -->
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -448,21 +459,15 @@
 <!-- footer section ends -->
 
 
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="firebase.js"></script>
+<script src="index.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
