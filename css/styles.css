@@ -594,6 +594,7 @@ section:nth-child(even){
         font-size: 2rem;
         display: block;
         margin:2.5rem;
+        word-wrap: break-word;
     }
     
     .userIn {
