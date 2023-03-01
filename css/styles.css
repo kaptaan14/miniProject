@@ -595,6 +595,10 @@ section:nth-child(even){
         display: block;
         margin:2.5rem;
     }
+    
+    .userIn {
+            word-wrap: break-word;
+    }
 
 }
 
