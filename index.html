@@ -278,7 +278,7 @@
             <img src="image/book-img-2.svg" alt="">
         </div>
 
-        <form action="">
+        <form action="" name="submit-to-google-sheet">
             <h3>book appointment</h3>
             <input type="text" name="Name" placeholder="your name" class="box">
             <input type="number" name="Number" placeholder="your number" class="box">
@@ -471,6 +471,18 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+    
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzhdxkh0EEFZb06SDMBS8SYLCVW-xB2_GjvSC99YJXZvLbF_XLIMvvwO3Vc2htdyx0zsw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
 </html>
