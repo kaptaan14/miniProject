@@ -11,6 +11,12 @@ firebase.auth().onAuthStateChanged((user)=>{
 })
 
 
+function booking(){
+    alert("Your response has been recorded.");
+    window.reload();
+    
+}
+
 function logout(){
     document.getElementById("userIn").style.visibility = 'visible';
     document.getElementById("userIn").innerHTML = 'Login/SignUp';
