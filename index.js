@@ -13,7 +13,7 @@ firebase.auth().onAuthStateChanged((user)=>{
 
 function booking(){
     alert("Your response has been recorded.");
-    window.reload();
+    window.location.reload();
     
 }
 
