@@ -10,6 +10,7 @@ firebase.auth().onAuthStateChanged((user)=>{
     // window.location.reload();
 })
 
+document.getElementById("booking").addEventListener("click", booking);
 
 function booking(){
     alert("Your response has been recorded.");
